@@ -8,6 +8,7 @@ mke2fs_src_files := \
 	default_profile.c
 
 mke2fs_c_includes := \
+	external/e2fsprogs/lib \
 	external/e2fsprogs/e2fsck
 
 mke2fs_cflags := -O2 -g -W -Wall \
@@ -122,6 +123,7 @@ tune2fs_src_files := \
 	util.c
 
 tune2fs_c_includes := \
+	external/e2fsprogs/lib \
 	external/e2fsprogs/e2fsck
 
 tune2fs_cflags := -O2 -g -W -Wall \
